@@ -1,0 +1,6 @@
+@import "tailwindcss";
+#login{
+    background-image: url(./Image/login.jpg);
+    background-position: center;
+    background-size: cover;
+}
