@@ -9,6 +9,7 @@ import Details from "./Details"
 import persistStore from "redux-persist/es/persistStore"
 import { Toaster } from 'react-hot-toast'
 import Question from "./Question"
+import { HashRouter } from "react-router-dom"
 import Result from "./Result"
 
 function App() {
@@ -24,14 +25,14 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Details />} />
             <Route path="/question" element={<Question />}/>
             <Route path="/result" element={<Result />}/>
           </Routes>
           <Toaster />
-        </BrowserRouter>
+        </HashRouter>
       </PersistGate>
     </Provider>
   )
