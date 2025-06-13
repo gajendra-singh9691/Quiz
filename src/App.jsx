@@ -28,7 +28,7 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path="/" element={<Details />} />
-            <Route path="/question" element={<Question />}/>
+            <Route path="/questions" element={<Question />}/>
             <Route path="/result" element={<Result />}/>
           </Routes>
           <Toaster />

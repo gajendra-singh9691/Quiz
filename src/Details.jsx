@@ -34,7 +34,7 @@ const Details = () => {
         setage('')
         dispatch({type:'add_user',payload: obj});
         localStorage.setItem("Quiz",JSON.stringify(obj));
-        navigate('/question');
+        navigate('/questions');
     }
   return (
     <div  className='min-h-screen flex items-center bg-[url(./image/login.jpg)] bg-center bg-cover'>
